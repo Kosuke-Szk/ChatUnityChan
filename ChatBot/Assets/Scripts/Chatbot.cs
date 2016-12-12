@@ -31,13 +31,14 @@ public class Chatbot : MonoBehaviour
 	private FaceUpdate faceUpdate;
 	private Animator _animator;
 
-    public Text _log;
+    public Text _unitylog;
+    public Text _userLog;
 
 
 	void Start () 
 	{
 		_animator = GetComponent<Animator> ();
-        LogPanel _logPanel = new LogPanel();
+        _unitylog.text = "\n";
 	}
 
 	void Update () {
@@ -53,7 +54,8 @@ public class Chatbot : MonoBehaviour
 		userSpeech.transform.parent = _userSpeechParent.transform;
 		Text userTalk = GameObject.Find ("UserTalk").GetComponent<Text> ();
 		userTalk.text = sendMessage;
-
+        string userSaveInput = _userLog.text;
+        WriteUserLog(sendMessage, userSaveInput);
 
 		HTTP.Post (url, sendMessage,www => {
 			Debug.Log (www.text);
@@ -65,8 +67,8 @@ public class Chatbot : MonoBehaviour
 			string botResponse = (string)resJson["utt"];
 			Debug.Log(botResponse);
 			botTalk.text = botResponse;
-            string saveInput = _log.text;
-            WriteUnityChanLog(botResponse, saveInput);
+            string unitySaveInput = _unitylog.text;
+            WriteUnityChanLog(botResponse, unitySaveInput);
 			SpeakScript.Speak(botResponse);
 
 			ChangeAnimation();
@@ -102,7 +104,13 @@ public class Chatbot : MonoBehaviour
 
     private void WriteUnityChanLog(string newInput, string saveInput)
     {
-        saveInput = saveInput + "\n"+"Unityちゃん: "+ "「"+ newInput +"」";
-        _log.text = saveInput;
+        saveInput = saveInput + "\n\n"+"Unityちゃん: "+ "「"+ newInput +"」";
+        _unitylog.text = saveInput;
+    }
+
+    private void WriteUserLog(string newInput, string saveInput)
+    {
+        saveInput = saveInput + "\n\n"+"あなた: "+ "「"+ newInput +"」";
+        _userLog.text = saveInput;
     }
 }

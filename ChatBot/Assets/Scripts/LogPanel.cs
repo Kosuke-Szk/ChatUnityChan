@@ -6,8 +6,6 @@ public class LogPanel : MonoBehaviour
 {
     private bool isOpened;
 
-    public Text _log;
-
 	// Use this for initialization
 	void Start () 
     {
