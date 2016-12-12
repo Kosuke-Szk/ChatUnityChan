@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{339A00B8-D27C-8E39-0F8B-112CB4334D82}") = "ChatBot", "Assembly-CSharp-firstpass.csproj", "{00D1082D-BD98-F626-0BC2-A00E1886E5DE}"
+EndProject
+Project("{339A00B8-D27C-8E39-0F8B-112CB4334D82}") = "ChatBot", "Assembly-CSharp.csproj", "{A5DD0BA1-7C77-2CAB-7517-21EB24A37404}"
+EndProject
+Project("{339A00B8-D27C-8E39-0F8B-112CB4334D82}") = "ChatBot", "Assembly-CSharp-Editor.csproj", "{06D19560-E835-36F5-85B4-911DF6C01B2D}"
+EndProject
+Project("{339A00B8-D27C-8E39-0F8B-112CB4334D82}") = "ChatBot", "Assembly-UnityScript-firstpass.unityproj", "{1B5D5E03-DFA2-CB83-6E95-5025FB438BFE}"
+EndProject
+Project("{339A00B8-D27C-8E39-0F8B-112CB4334D82}") = "ChatBot", "Assembly-UnityScript.unityproj", "{D56B460E-0BA4-10E9-D7A5-D107382DB1A9}"
+EndProject
+Project("{339A00B8-D27C-8E39-0F8B-112CB4334D82}") = "ChatBot", "Assembly-UnityScript-Editor-firstpass.unityproj", "{6417737D-C656-B73E-E5DC-2218624C0793}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00D1082D-BD98-F626-0BC2-A00E1886E5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D1082D-BD98-F626-0BC2-A00E1886E5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D1082D-BD98-F626-0BC2-A00E1886E5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D1082D-BD98-F626-0BC2-A00E1886E5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DD0BA1-7C77-2CAB-7517-21EB24A37404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DD0BA1-7C77-2CAB-7517-21EB24A37404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DD0BA1-7C77-2CAB-7517-21EB24A37404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DD0BA1-7C77-2CAB-7517-21EB24A37404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D19560-E835-36F5-85B4-911DF6C01B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D19560-E835-36F5-85B4-911DF6C01B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D19560-E835-36F5-85B4-911DF6C01B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D19560-E835-36F5-85B4-911DF6C01B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5D5E03-DFA2-CB83-6E95-5025FB438BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5D5E03-DFA2-CB83-6E95-5025FB438BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5D5E03-DFA2-CB83-6E95-5025FB438BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5D5E03-DFA2-CB83-6E95-5025FB438BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56B460E-0BA4-10E9-D7A5-D107382DB1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56B460E-0BA4-10E9-D7A5-D107382DB1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56B460E-0BA4-10E9-D7A5-D107382DB1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56B460E-0BA4-10E9-D7A5-D107382DB1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6417737D-C656-B73E-E5DC-2218624C0793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6417737D-C656-B73E-E5DC-2218624C0793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6417737D-C656-B73E-E5DC-2218624C0793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6417737D-C656-B73E-E5DC-2218624C0793}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
